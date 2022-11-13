@@ -1,0 +1,283 @@
+.homepage {
+    font-family: 'Libre Franklin', sans-serif !important;
+}
+
+.homepage .trust-panel {
+    background-color: #ffff !important;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+    gap: 8px;
+    font-size: 19px;
+    color: #0e0e0e !important;
+}
+
+.homepage .trust-panel strong {
+    font-weight: 800 !important;
+    color: #0e0e0e !important;
+}
+
+.homepage .trust-panel img {
+    width: 100px;
+}
+
+.homepage .information {
+    background-color: #66AB8C !important;
+    color: white;
+    padding: 19px;
+}
+
+.homepage main {
+    padding: 0px 6%;
+    padding-bottom: 60px;
+}
+
+
+.homepage main .steps {
+    text-align: left;
+    /* display: inline-block; */
+    margin-top: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+    padding: 2em;
+    background-color: transparent !important;
+    color: white;
+    /* margin: 23px 0px !important; */
+}
+
+.homepage main .steps.section3 {
+    background-color: #f8f8f0 !important;
+    background-image: url("https://www.animal-crossing.com/new-horizons/assets/img/global/patterns/pattern-dots.png");
+    border-radius: 23px;
+    position: relative;
+}
+
+@media only screen and (min-width: 40em) {
+    .pattern-blade .wave-rule::after {
+        left: var(--pattern-blade-inset);
+        width: calc(100% - var(--pattern-blade-inset) * 2);
+    }
+}
+
+.wave-rule::after {
+    background-image: url("https://www.animal-crossing.com/new-horizons/assets/img/global/rule-wave-yellow.svg");
+    background-repeat: repeat-x;
+    content: "";
+    height: 10px;
+    left: 0;
+    position: absolute;
+    top: 13px;
+    width: 100%;
+}
+
+.homepage main .steps.section5 {
+    background-image: url("https://catwithmonocle.com/wp-content/uploads/2020/03/featured-size-ac-new-horizons-character-pattern-1920x1080.jpg");
+    background-position: center center;
+    border-radius: 23px;
+    background-color: #9ad4e4 !important;
+    padding: 100px 60px;
+}
+
+.homepage main .steps.section5 .row .col-lg-4 .services-block {
+    border: 19px solid rgba(123, 180, 218) !important;
+    min-height: 300px;
+    padding-top: 32px;
+    border-radius: 16px;
+    background-color: #f8f8f0 !important;
+}
+
+
+.homepage main .steps .title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homepage main .steps .title-container>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://www.animal-crossing.com/new-horizons/assets/img/global/bubble-border.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 330px;
+    /* min-height: 200px; */
+    padding-top: 14px;
+    padding-left: 12px;
+}
+
+.homepage main .steps h4 {
+    color: #5e5644 !important;
+    font-size: 28px;
+    margin-bottom: 10px !important;
+    text-align: center;
+}
+
+.homepage main .steps p {
+    color: black !important;
+    font-size: 17px;
+    margin-top: 1.45em;
+}
+
+.dodo-conversation {
+    text-align: center;
+    color: black !important;
+    margin: 1.2em;
+    font-size: 17px;
+}
+
+.homepage .steps .step-square-img {
+    display: block;
+    height: 9em;
+    margin-top: 1em;
+    border-radius: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.steps a {
+    color: #FA7C92;
+}
+
+.homepage main .steps .main-information {
+    font-size: 23px;
+    padding-top: 1em;
+    margin-bottom: 0px !important;
+    color: black !important;
+}
+
+.homepage main .steps.section3 p {
+    color: #ced4dc;
+}
+
+.homepage main .tt-title {
+    text-align: center;
+    font-weight: 800 !important;
+    color: #635341 !important;
+    margin-bottom: 23px !important;
+    font-family: "Zilla Slab";
+}
+
+.homepage main .steps .how-section .row .col-lg-4>div {
+    background-color: #f8f8ef !important;
+    position: relative;
+    border: 12px solid rgba(241, 226, 111, 0.8);
+    border-radius: 10px !important;
+    min-height: 310px;
+    padding: 10px;
+    /* min-height: 240px; */
+}
+
+.homepage main .steps .how-section .row .col-lg-4>div.number2 {
+    border: 12px solid #478d75 !important;
+}
+
+.homepage main .steps .how-section .row .col-lg-4 .number3 {
+    border: 12px solid #337a92 !important;
+}
+
+.news-article__dots--bottom::before,
+.news-article__dots--bottom::after {
+    bottom: 10px !important;
+}
+
+.news-article__dots::after {
+    right: 15px !important;
+}
+
+.news-article__dots::before,
+.news-article__dots::after {
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 1.5px 1.5px 0px 2.5px #015b55, 1.5px 1.5px 0px 5px #008077, 5px 4px 0px 5px rgb(0 0 0 / 26%);
+    content: "";
+    display: block;
+    height: 4px;
+    position: absolute;
+    width: 4px;
+}
+
+.homepage main .steps .how-section .row .upper {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.homepage main .steps .how-section .row .title {
+    font-size: 28px;
+    color: #539c92;
+    margin-bottom: 0px;
+    font-weight: 800 !important;
+    font-family: "Zilla Slab" !important;
+}
+
+.homepage main .steps .how-section .row .desc {
+    font-size: 21px;
+    opacity: .6 !important;
+    margin-top: 0px !important;
+}
+
+.homepage main .steps .services-listing .row {
+    text-align: center;
+}
+
+.homepage main .steps .services-listing .row i {
+    font-size: 50px;
+    color: #337ff9;
+    margin-bottom: 23px;
+}
+
+.homepage main .steps .services-listing .row h4 {
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.homepage main .steps .services-listing .row p {
+    margin-top: 0px;
+    opacity: .6;
+}
+
+.homepage main .product-section,
+.homepage main .section4 {
+    padding: 0px;
+}
+
+@media (max-width: 1100px) {
+    .homepage main {
+        margin: 0px;
+        padding: 0px 2%;
+    }
+
+    .homepage main .steps {
+        padding: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .homepage main .steps .title-container>div {
+        margin-top: 32px;
+    }
+
+    .homepage main .steps .information-con {
+        padding: 23px;
+    }
+}
+
+@media (max-width: 600px) {
+    .homepage main {
+        padding-top: 32px;
+    }
+
+    .homepage main .product-section .col-md-4 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .homepage main .product-section .col-md-4 .productCard {
+        width: 100%;
+        min-width: 300px;
+        max-width: max-content !important;
+    }
+}

@@ -1,0 +1,362 @@
+.cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 23px 0px;
+}
+
+.cart>div {
+    width: 80% !important;
+    min-width: 400px;
+    max-width: 2300px;
+}
+
+.cart .title {
+    text-align: center;
+    font-weight: 800 !important;
+    color: #635341 !important;
+    margin-bottom: 17px !important;
+    font-family: "Zilla Slab";
+}
+
+.cart .sub-title {
+    color: #004d0f !important;
+    font-family: "Zilla Slab" !important;
+}
+
+.cart button {
+    background-color: #f8f8f0 !important;
+    color: #635341;
+    border: 0;
+    padding: 0.6em;
+}
+
+.cart .uppercase-forms {
+    text-transform: uppercase;
+}
+
+.cart>div {
+    background-image: url("https://www.animal-crossing.com/new-horizons/assets/img/global/patterns/pattern-stripes-2x.jpg");
+    background-size: 20px 20px;
+    padding: 32px !important;
+    border-radius: 23px;
+}
+
+.cart>div .inner {
+    background-color: #f8f8f0 !important;
+    background-image: url("https://www.animal-crossing.com/new-horizons/assets/img/global/patterns/pattern-dots.png");
+    border-radius: 23px;
+    display: inline-block;
+    height: auto;
+    border-radius: 23px;
+    text-align: left;
+    padding: 1.5em;
+    max-width: 100% !important;
+    box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.4);
+}
+
+.cart .user-cart {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    color: black;
+    padding-top: 0.8em;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    background-color: white;
+    border: 6px solid #f0d000;
+    border-radius: 23px;
+}
+
+
+.cart .user-cart th {
+    text-align: left;
+    font-size: 1em;
+    padding-bottom: 0.5em;
+}
+
+.cart .user-cart td {
+    padding: 19px 4px;
+}
+
+.cart .user-cart td:last-child {
+    text-align: right;
+}
+
+.cart .user-cart .total td {
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+}
+
+.cart .qty-box {
+    display: flex;
+    justify-content: center;
+}
+
+.cart .qty-box>div {
+    background-color: #f0f1f3;
+    padding: 6px 23px;
+    border-radius: 2px;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+
+.cart .cart-quantity-box {
+    text-align: center;
+    width: 3em;
+    background-color: transparent;
+    border: 1em;
+    border-radius: 0.2em;
+    color: black;
+    height: 2em;
+}
+
+
+.cart .cart-preview {
+    height: 4.4em;
+    margin-right: 0.8em;
+}
+
+.cart .item-container {
+    display: flex;
+    align-items: center;
+}
+
+.cart .form-payment-container {
+    display: flex;
+}
+
+.cart .payment-container {
+    background-color: #7b6c53;
+    background-image: url("https://www.animal-crossing.com/new-horizons/assets/img/global/patterns/pattern-dots.png");
+    background-size: 10px 10px;
+    padding: 1em;
+    border-radius: 0.5em;
+    color: white;
+}
+
+.cart .delivery-information {
+    flex: 1;
+    margin-right: 0.5em;
+}
+
+.cart .payment-information {
+    flex: 1;
+    margin-left: 0.5em;
+    transition: ease-in !important;
+    transition-duration: 4s;
+    transform-origin: right;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55) !important;
+}
+
+.cart .cart-disclaimer {
+    color: #464646;
+    margin-bottom: 1em;
+    font-size: 17px;
+    padding: 0.8em;
+    background-color: #f58d88 !important;
+    text-align: center;
+    font-size: 19px;
+    font-weight: 500;
+    border-radius: 23px;
+    margin: 19px 0px;
+}
+
+.cart .cart-disclaimer-urgent {
+    color: white;
+    margin-bottom: 1em;
+    border: solid #ff7c7c 2px;
+    border-radius: 0.5em;
+    padding: 0.8em;
+    background-color: #66AB8C !important;
+    text-align: center;
+}
+
+@media screen and (max-width: 620px) {
+    .cart .form-payment-container {
+        display: block;
+    }
+
+    .cart .delivery-information {
+        margin-right: 0;
+    }
+
+    .cart .payment-information {
+        margin-left: 0;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .cart .item-name {
+        font-size: 0.8em;
+        width: 5em;
+    }
+
+    .cart .user-cart {
+        padding-left: 0.5em;
+    }
+}
+
+
+.cart .paypal-animation-container .paypal-button-text {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+
+.cart table button {
+    background-color: transparent !important;
+}
+
+.cart a {
+    color: #635341 !important;
+    font-size: 19px;
+}
+
+.cart .price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+    border: 6px solid #f0d000;
+    border-radius: 23px;
+    background-color: white;
+    padding: 14px 10px;
+}
+
+.cart .price-container h4 {
+    color: black !important;
+}
+
+.cart .price-container h5 {
+    color: black !important;
+    font-weight: 300 !important;
+    font-size: 23px;
+}
+
+.cart .proceed-btn,
+.notice-modal .back-btn {
+    background-color: #f0d000 !important;
+    color: #185b0c;
+    font-family: "Zilla Slab";
+    font-size: 19px;
+    width: 100%;
+    padding: 12px 28px;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.notice-modal .back-btn {
+    width: 50% !important;
+}
+
+.cart .proceed-btn::before,
+.notice-modal .back-btn::before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 0px;
+    width: 17px !important;
+    height: 100px !important;
+    z-index: 1000 !important;
+    isolation: isolate !important;
+    background-image: url("https://www.animal-crossing.com/new-horizons/assets/img/global/hhp-button-pattern.png") !important;
+    background-repeat: repeat-y;
+    transform: translateZ(0);
+}
+
+.cart .proceed-btn::after,
+.notice-modal .back-btn::after {
+    content: "";
+    position: absolute;
+    right: 6px;
+    top: 0px;
+    width: 17px !important;
+    height: 100px !important;
+    z-index: 1000 !important;
+    isolation: isolate !important;
+    background-image: url("https://www.animal-crossing.com/new-horizons/assets/img/global/hhp-button-pattern.png") !important;
+    background-repeat: repeat-y;
+    transform: translateZ(0);
+}
+
+.cart .payment-information .sub-title {
+    font-size: 23px !important;
+    font-family: 'Libre Franklin', sans-serif !important;
+    font-weight: 800 !important;
+}
+
+.cart .order-process {
+    background-color: #635341;
+    border-radius: 23px;
+}
+
+.cart .order-process h5 {
+    margin-top: 23px;
+}
+
+@media (max-width: 1100px) {
+    .cart>div {
+        width: 96% !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .cart>div {
+        padding: 19px !important;
+    }
+
+    .cart>div .inner {
+        padding: 10px !important;
+    }
+
+    .cart .qty-box>div {
+        padding: 4px !important;
+    }
+
+    .cart .cart-disclaimer {
+        font-size: 15px !important;
+    }
+
+    .cart .price-container div {
+        margin-bottom: 23px;
+    }
+
+    .cart .price-container div:nth-child(3) {
+        width: 100% !important;
+    }
+
+    .cart .order-process {
+        padding: 14px !important;
+    }
+
+    .cart .order-process h5 {
+        font-size: 17px !important;
+    }
+
+    .cart a {
+        font-size: 15px;
+    }
+}
+
+.notice-modal .ant-modal-body .notice {
+    padding: 0px 8px 0px 32px;
+    color: #7d7058 !important;
+    font-size: 15px !important;
+}
+
+.notice-modal .ant-modal-content {
+    border: 10px solid rgba(124, 181, 220, 0.67);
+    border-radius: 43px;
+    background-color: #f8f8f0;
+}
+
+.notice-modal h4 {
+    color: #2c6695 !important;
+    font-weight: 600;
+    margin-bottom: 8px !important;
+    margin-top: -23px;
+}

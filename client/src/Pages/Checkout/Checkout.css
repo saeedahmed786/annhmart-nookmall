@@ -1,0 +1,374 @@
+.checkout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 23px 0px;
+}
+
+.checkout>div {
+    width: 80% !important;
+    min-width: 400px;
+    max-width: 2300px;
+}
+
+.checkout .title {
+    text-align: center;
+    font-weight: 800 !important;
+    color: #635341 !important;
+    margin-bottom: 17px !important;
+    font-family: "Zilla Slab";
+    font-size: 43px;
+    text-transform: uppercase;
+}
+
+.checkout .sub-title {
+    color: #004d0f !important;
+    font-family: "Zilla Slab" !important;
+}
+
+.checkout button {
+    background-color: #f8f8f0 !important;
+    color: #635341;
+    border: 0;
+    padding: 0.6em;
+}
+
+.checkout .uppercase-forms {
+    text-transform: uppercase;
+}
+
+.checkout>div {
+    background-image: url("https://www.animal-crossing.com/new-horizons/assets/img/global/patterns/pattern-stripes-2x.jpg");
+    background-size: 20px 20px;
+    padding: 32px !important;
+    border-radius: 23px;
+}
+
+.checkout>div .inner {
+    background-color: #f8f8f0 !important;
+    background-image: url("https://www.animal-crossing.com/new-horizons/assets/img/global/patterns/pattern-dots.png");
+    border-radius: 23px;
+    height: auto;
+    border-radius: 23px;
+    text-align: left;
+    padding: 1.5em;
+    max-width: 100% !important;
+    box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.4);
+}
+
+.checkout .user-cart {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    color: black;
+    padding-top: 0.8em;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    background-color: white;
+    border: 6px solid #f0d000;
+    border-radius: 23px;
+}
+
+.checkout .user-cart table {
+    width: 100%;
+}
+
+
+.checkout .user-cart th {
+    text-align: left;
+    font-size: 1em;
+    padding-bottom: 0.5em;
+}
+
+.checkout .user-cart td {
+    padding: 19px 4px;
+}
+
+.checkout .user-cart td:last-child {
+    text-align: right;
+}
+
+.checkout .user-cart .total td {
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+}
+
+.checkout .qty-box {
+    display: flex;
+    justify-content: center;
+}
+
+.checkout .qty-box>div {
+    background-color: #f0f1f3;
+    padding: 6px 23px;
+    border-radius: 2px;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+
+.checkout .cart-quantity-box {
+    text-align: center;
+    width: 3em;
+    background-color: transparent;
+    border: 1em;
+    border-radius: 0.2em;
+    color: black;
+    /* height: 2em; */
+}
+
+
+.checkout .cart-preview {
+    height: 4.4em;
+    margin-right: 0.8em;
+}
+
+.checkout .item-container {
+    display: flex;
+    align-items: center;
+}
+
+@media all and (max-width: 600px) {
+    .checkout .item-name {
+        font-size: 0.8em;
+        width: 5em;
+    }
+
+    .checkout .user-cart {
+        padding-left: 0.5em;
+    }
+}
+
+
+.checkout .paypal-animation-container .paypal-button-text {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+
+.checkout table button {
+    background-color: transparent !important;
+}
+
+.checkout a {
+    color: #635341 !important;
+    font-size: 19px;
+}
+
+.checkout .bottom-container h3 {
+    color: #32623e !important;
+    font-weight: 600;
+}
+
+.checkout .bottom-container p {
+    font-weight: 600 !important;
+}
+
+.checkout .tip-container {
+    background-color: #faf9f8 !important;
+    /* border-bottom-left-radius: 23px; */
+    border-top: 2px solid #f0f0f0;
+    padding-top: 15px;
+}
+
+.checkout .custom-tip-container {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 15px 0px;
+    background-color: #faf9f8 !important;
+}
+
+.checkout .custom-tip-container input {
+    width: 100% !important;
+    height: 36px;
+    border: 1px solid #d9d9d9;
+    padding: 0px 10px;
+}
+
+.checkout .custom-tip-container .update-btn {
+    background-color: #f0d000 !important;
+    color: #946a2b;
+    font-family: "Zilla Slab";
+    font-size: 19px;
+    width: 100%;
+    padding: 0px 10px;
+    height: 38px;
+    position: relative;
+    overflow-y: hidden;
+    max-width: 130px;
+}
+
+.checkout .custom-tip-container .update-btn::before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 0px;
+    width: 17px !important;
+    height: 100px !important;
+    z-index: 1000 !important;
+    isolation: isolate !important;
+    background-image: url("https://www.animal-crossing.com/new-horizons/assets/img/global/hhp-button-pattern.png") !important;
+    background-repeat: repeat-y;
+    transform: translateZ(0);
+}
+
+.checkout .custom-tip-container .update-btn::after {
+    content: "";
+    position: absolute;
+    right: 6px;
+    top: 0px;
+    width: 17px !important;
+    height: 100px !important;
+    z-index: 1000 !important;
+    isolation: isolate !important;
+    background-image: url("https://www.animal-crossing.com/new-horizons/assets/img/global/hhp-button-pattern.png") !important;
+    background-repeat: repeat-y;
+    transform: translateZ(0);
+}
+
+.checkout .ant-radio-group {
+    width: 100%;
+}
+
+.checkout .ant-radio-button-wrapper {
+    height: 60px !important;
+    text-align: center !important;
+    vertical-align: middle;
+    min-width: 100px;
+    width: 25% !important;
+}
+
+.checkout .ant-radio-button-wrapper span {
+    vertical-align: middle;
+}
+
+.checkout .ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+    border-color: #84c3e0;
+    border-width: 2px;
+    background-color: transparent;
+    color: black;
+}
+
+.checkout .bottom-container .price-discount-container {
+    width: 71%;
+}
+
+.checkout .bottom-container .price-discount-container .item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkout .bottom-container .price-discount-container .item p,
+.checkout .bottom-container .price-discount-container .item h6 {
+    margin-bottom: 0px;
+    color: black !important;
+    margin-bottom: 10px;
+    font-weight: 400 !important;
+}
+
+.checkout .bottom-container .price-discount-container .item p {
+    opacity: .4;
+}
+
+.checkout .form-payment-container {
+    width: 50%;
+}
+
+.checkout .form-payment-container .sub-title {
+    font-family: 'Libre Franklin', sans-serif !important;
+    font-weight: 800 !important;
+}
+
+.checkout .form-payment-container .payment-information {
+    border: 6px solid #f0d000;
+    border-radius: 10px;
+}
+
+.checkout .form-payment-container .bottom {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkout .form-payment-container .bottom a {
+    font-size: 15px;
+    color: #5fa443 !important;
+}
+
+.checkout .form-payment-container .bottom .btn {
+    font-size: 15px;
+    color: #FFFFFF;
+    background-color: #488132 !important;
+    padding: 8px 23px;
+}
+
+.checkout .payment-information .image-pay-left .form-check {
+    background-color: white;
+    border: 1px solid rgb(177, 177, 177);
+    border-radius: 4px;
+    padding: 10px 32px;
+    margin-bottom: 23px;
+}
+
+.checkout .payment-information .pay-images {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.checkout button#submit {
+    width: 100%;
+    font-size: 15px;
+    color: #FFFFFF;
+    background-color: #488132 !important;
+    padding: 8px 23px;
+    margin: 23px 0px;
+}
+
+@media (max-width: 1100px) {
+    .checkout>div {
+        width: 96% !important;
+    }
+
+    .checkout .bottom-container .price-discount-container {
+        width: 100%;
+    }
+
+    .checkout .tip-container {
+        margin: 10px;
+        padding: 0px !important;
+        padding-top: 10px !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .checkout>div {
+        padding: 19px !important;
+    }
+
+    .checkout>div .inner {
+        padding: 10px !important;
+    }
+
+    .checkout .qty-box>div {
+        padding: 4px !important;
+    }
+
+    .checkout .form-payment-container {
+        width: 100% !important;
+    }
+
+    .checkout .bottom-container .price-discount-container {
+        width: 100%;
+    }
+
+    .checkout .tip-container {
+        margin: 10px;
+        padding: 0px !important;
+        padding-top: 10px !important;
+    }
+}

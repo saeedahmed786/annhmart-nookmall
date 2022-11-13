@@ -1,0 +1,231 @@
+nav {
+    display: flex;
+    align-items: center !important;
+    justify-content: space-between;
+    gap: 23px;
+    background-image: url("https://www.animal-crossing.com/new-horizons/assets/img/global/patterns/pattern-dots.png");
+    background-size: 10px 10px;
+    background-color: #19ad5e;
+    padding: 8px 15px;
+}
+
+nav .logo-container {
+    width: 20%;
+    margin-top: 6px;
+}
+
+nav .right {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 17px;
+    position: relative;
+}
+
+nav .right .currency-selector {
+    width: 60px;
+}
+
+
+nav .right .currency-selector select {
+    position: absolute;
+    top: -10px !important;
+    right: -15px;
+    width: 80px;
+    height: 65.2px;
+}
+
+nav .input-container {
+    position: relative;
+}
+
+nav .input-container button {
+    border-bottom-right-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    border-width: 0;
+    width: 45px;
+    padding-top: 0.4em;
+    cursor: pointer;
+    height: 47px;
+    background-color: white !important;
+    float: left;
+    -webkit-appearance: none;
+    font-family: inherit;
+    border-radius: 0.5em 0em 0em 0.5em;
+    color: black;
+}
+
+nav .input-container .searched-items-container {
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1000 !important;
+    padding-bottom: 32px;
+    max-height: 80vh !important;
+    overflow-y: auto;
+}
+
+nav .input-container .searched-items-container .btn {
+    width: 100% !important;
+    background-color: transparent !important;
+    border-bottom: 1px solid rgb(68, 63, 63);
+    border-radius: 0px;
+    text-align: left;
+    color: black;
+}
+
+nav .input-container .searched-items-container .btn:hover {
+    background-color: #FFF7C0 !important;
+}
+
+nav .input-container>div {
+    display: flex;
+    gap: 0px;
+    align-items: center;
+}
+
+nav .input-container input,
+nav .input-container input:focus {
+    width: 100%;
+    height: 47px;
+    border-radius: 0em 0.5em 0.5em 0em;
+    border: none;
+    box-shadow: none;
+    outline: none !important;
+    font-size: 17px !important;
+    padding-left: 4px;
+    min-width: 20vw;
+}
+
+nav .icons-container {
+    width: 8%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-right: 10px;
+}
+
+nav .icons-container i {
+    font-size: 47px !important;
+    color: white;
+}
+
+nav .icons-container .cart-area {
+    position: relative;
+}
+
+nav .icons-container .cart-area .carted-count {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 1.1em;
+    background-color: #6b5c43 !important;
+    border-radius: 0.5em;
+    padding: 0.15em 0.4em 0.07em;
+}
+
+.nav-categories {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: #f1e26f;
+    overflow-x: auto;
+    padding: 2px 15px 2px 15px;
+}
+
+.nav-categories .cat,
+.nav-categories .cat.btn:focus {
+    display: flex !important;
+    gap: 6px;
+    min-width: max-content !important;
+    background-color: transparent !important;
+    align-items: center;
+    font-size: 17px !important;
+    color: #6b5c43;
+    border-radius: 0.3em;
+}
+
+.cart-area-sticky.visible {
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    padding: 8px;
+    background-color: #FA7C92;
+    border-radius: 0.2em;
+    box-shadow: 0 2px 4px #23303e7a;
+    transition-timing-function: ease-in-out !important;
+    transition: 1s !important;
+}
+
+.cart-area-sticky.visible .cart-area {
+    position: relative;
+}
+
+.cart-area-sticky.visible i {
+    font-size: 47px !important;
+    color: white !important;
+}
+
+.cart-area-sticky.visible .cart-area .carted-count {
+    position: absolute;
+    right: -15px !important;
+    top: -40px;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 1.1em;
+    background-color: #6EC4DB !important;
+    border-radius: 0.5em;
+    padding: 0.15em 0.4em 0.07em;
+}
+
+.cart-area-sticky.visible {
+    width: 73px !important;
+    height: 62px !important;
+    transition: 1s !important;
+}
+
+
+.cart-area-sticky.hidden {
+    width: 1px !important;
+    z-index: -1000 !important;
+    transition: 1s !important;
+    position: absolute !important;
+    top: 10px !important;
+}
+
+nav .currency-selector select {
+    height: 54px;
+    margin-left: 2px;
+    background-color: #ff6c00;
+    color: white;
+    text-align: center;
+    border: none;
+}
+
+@media (max-width: 700px) {
+    nav {
+        padding: 0px 4px !important;
+    }
+
+    nav .logo-container {
+        width: 100% !important;
+        margin-top: 2px;
+    }
+
+    nav .logo-container img {
+        width: 100% !important;
+    }
+
+    nav .icons-container img {
+        width: 36px;
+    }
+
+    nav .cart-area i {
+        font-size: 36px !important;
+    }
+}

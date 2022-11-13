@@ -1,0 +1,88 @@
+.forgot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.forgot>div {
+    width: 23% !important;
+}
+
+.forgot h2 {
+    font-size: 23px !important;
+    font-weight: 400;
+}
+
+.forgot .bubble-container {
+    padding: 10px !important;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    left: 50%;
+    height: auto;
+    border-radius: 0.6em !important;
+    border-width: 0.2em;
+    border-color: #51ccee;
+    border-style: solid;
+    background-color: #66AB8C !important;
+}
+
+.forgot h3 {
+    margin-top: 15px;
+    font-size: 14px !important;
+    margin-bottom: 4px !important;
+}
+
+.forgot input {
+    -webkit-appearance: none;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 0.5em !important;
+    width: 100%;
+    padding: 4px;
+}
+
+.forgot button {
+    -webkit-appearance: none;
+    width: 100%;
+    background-color: #51ccee;
+    border-radius: 0.5em;
+    font-size: .9em;
+    color: #fff;
+    border: 0;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+    margin-top: 1.8em;
+}
+
+.terms-privacy {
+    margin-top: 1em;
+    text-align: left;
+    font-size: 1em;
+    color: #fff;
+}
+
+.terms-privacy a {
+    color: #51ccee;
+}
+
+.forgot-password {
+    margin-top: 1em;
+    text-align: left;
+    font-size: 1.1em;
+    color: #fff;
+}
+
+.forgot-password a {
+    color: #51ccee;
+}
+
+.forgot .forgot-noaccount .bubble-container {
+    width: 100%;
+    text-align: center;
+}

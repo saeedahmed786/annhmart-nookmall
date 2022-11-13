@@ -1,0 +1,14 @@
+.orders table th {
+    font-size: 10px !important;
+}
+
+.orders .eachSection {
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+.orders .eachSection .table, .orders .eachSection .table-container {
+    background-color: rgb(23, 23, 23);
+    color: white !important;
+    padding: 10px;
+}

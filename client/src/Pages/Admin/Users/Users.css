@@ -1,0 +1,18 @@
+.allUsers input {
+    border: 1px solid gray !important;
+}
+
+.ant-drawer-body .create-user input {
+    border: 1px solid black !important;
+    width: 100%;
+}
+
+.ant-drawer-body .create-user form label {
+    color: black !important;
+    display: block !important;
+    margin-top: 23px;
+}
+
+.allUsers .ant-input-search .ant-input-affix-wrapper input {
+    border: none !important;
+}

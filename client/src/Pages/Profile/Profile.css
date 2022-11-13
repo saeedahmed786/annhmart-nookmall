@@ -1,0 +1,98 @@
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 23px 0px;
+}
+
+.profile>div {
+    background-image: url("https://www.animal-crossing.com/new-horizons/assets/img/global/patterns/pattern-stripes.jpg") !important;
+    background-size: 20px 20px;
+    padding: 23px !important;
+    border-radius: 10px;
+}
+
+.profile>div .inner {
+    /* background-image: url("https://www.animal-crossing.com/new-horizons/assets/img/global/patterns/pattern-trees-2x.jpg");
+    background-size: 150px 100px; */
+    background-color: #f8f8f0 !important;
+    background-image: url("https://www.animal-crossing.com/new-horizons/assets/img/global/patterns/pattern-dots.png");
+    border-radius: 23px;
+    height: auto;
+    border-radius: 10px;
+    text-align: left;
+    padding: 1.5em;
+    max-width: 100% !important;
+    box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.4);
+}
+
+.profile>div {
+    width: 80% !important;
+}
+
+.profile .title,
+.profile h3 {
+    text-align: left;
+    font-weight: 800 !important;
+    /* font-size: 36px; */
+    color: #635341 !important;
+    margin-bottom: 17px !important;
+    font-family: "Zilla Slab";
+}
+
+.profile .title {
+    text-align: center !important;
+}
+
+.set-button {
+    background-color: #635341 !important;
+    color: #635341;
+    font-size: .8em;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    height: 34px
+}
+
+.dodo-set-button {
+    background-color: #635341 !important;
+    color: #635341;
+    font-size: .9em;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    height: 40px
+}
+
+.profile button,
+.profile .password-reset-button {
+    background-color: #635341 !important;
+    border-radius: 0.5em;
+    font-size: 1em;
+    color: #fff;
+    border: 0 !important;
+    padding: 0.6em;
+    white-space: nowrap;
+}
+
+.profile-element {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 23px;
+    /* border: 1px solid gray; */
+}
+
+.profile-element h3 {
+    margin-bottom: 4px !important;
+}
+
+.profile-element-info {
+    color: #000;
+    font-size: .8em;
+    margin-right: 3em
+}
+
+@media (max-width: 1100px) {
+    .profile>div {
+        width: 96% !important;
+    }
+}

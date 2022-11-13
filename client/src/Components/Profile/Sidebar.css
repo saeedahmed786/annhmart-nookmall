@@ -1,0 +1,23 @@
+.profile-sidebar {
+    font-size: 15px;
+}
+
+.profile-sidebar p {
+    color: #7e818c;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.profile-sidebar .prof-div {
+    border-top: 1px solid #d4d5d9;
+    padding: 20px 0px;
+}
+
+@media (max-width: 420px) {
+    .profile-sidebar {
+        padding-right: 10px;
+    }
+    .profile-sidebar a {
+        font-size: 14px;
+    }
+}

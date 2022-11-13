@@ -1,0 +1,187 @@
+header .alert-banner {
+    padding: 17px;
+    overflow: hidden !important;
+}
+
+header .banner-container {
+    background-image: url("https://cdn.shopify.com/s/files/1/0656/8493/0808/files/Spooky_Castle_Front1_x1024.jpg?v=1663412485");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .banner-container .banner-overlay {
+    width: 60%;
+    min-width: 60vw;
+}
+
+header .banner-container .text-area {
+    background-color: rgba(254, 254, 254, .71) !important;
+    border-radius: .5em;
+    padding: 4rem .7em 4em .7em !important;
+    width: 100% !important;
+}
+
+header h3 {
+    display: block !important;
+}
+
+.banner-container {
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    max-height: 360px
+}
+
+header .banner {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.text-area h5 {
+    color: black !important;
+}
+
+.text-area h5.first {
+    color: #2879fe !important;
+    font-weight: 300 !important;
+}
+
+.text-area .free-gift {
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    color: #8700ff !important;
+}
+
+.shop-button-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 19px;
+    margin-top: 32px;
+}
+
+.shop-button {
+    font-size: 17px;
+    border-radius: .35em;
+    cursor: pointer;
+    background-color: #19ad5e !important;
+    color: #fff;
+    padding: 10px 43px;
+    border: solid 3px #19ad5e;
+    box-shadow: 0 2px 4px 0 #3c3c3cb8;
+    -moz-box-shadow: 0 2px 4px 0 #3c3c3cb8;
+    -webkit-box-shadow: 0 2px 4px 0 #3c3c3cb8;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.two-button {
+    font-size: 17px;
+    border-radius: .35em;
+    cursor: pointer;
+    background-color: #ef651b !important;
+    color: #fff;
+    padding: 10px 43px;
+    border: solid 3px #ef651b;
+    box-shadow: 0 2px 4px 0 #3c3c3cb8;
+    -moz-box-shadow: 0 2px 4px 0 #3c3c3cb8;
+    -webkit-box-shadow: 0 2px 4px 0 #3c3c3cb8;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.shop-sub-button {
+    font-size: 23px;
+    border-radius: .35em;
+    cursor: pointer;
+    background-color: #FA7C92 !important;
+    color: #fff;
+    padding: 4px 23px;
+    border: solid 3px #FA7C92;
+    box-shadow: 0 2px 4px 0 #3c3c3cb8;
+    -moz-box-shadow: 0 2px 4px 0 #3c3c3cb8;
+    -webkit-box-shadow: 0 2px 4px 0 #3c3c3cb8;
+    display: flex;
+    gap: 10px !important;
+}
+
+.shop-sub-button img {
+    width: 21px;
+}
+
+.shop-button:hover {
+    background-color: #98e9ff
+}
+
+@media screen and (min-width:860px) {
+    .banner {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, -20%)
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .text-area-container {
+        transform: scale(1.4);
+        padding: 23px 0px !important;
+    }
+}
+
+@media only screen and (min-width:860px) {
+    .alert-banner {
+        padding-top: 1em;
+        padding-bottom: 1em
+    }
+}
+
+@media only screen and (min-width:1280px) {
+    .text-displays {
+        font-size: 1.1em !important
+    }
+
+    .banner-container {
+        max-height: 600px !important
+    }
+
+    .text-area-container {
+        transform: scale(1.4)
+    }
+
+    .text-area {
+        padding-left: 6.2em !important;
+        padding-right: 6.2em !important;
+        padding-top: 1.2em !important;
+        padding-bottom: 2em !important
+    }
+
+    .shop-inner-container {
+        transform: scale(1.3)
+    }
+}
+
+@media (max-width: 600px) {
+    header .banner-container {
+        display: block;
+    }
+
+    header .banner-container .banner-overlay {
+        width: 100% !important;
+    }
+
+    header .banner-container .text-area {
+        border-radius: 0px;
+    }
+
+    header .shop-button-container {
+        margin-bottom: 10px !important;
+        margin-top: 15px !important;
+    }
+}
