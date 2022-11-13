@@ -114,7 +114,7 @@ const Cart = () => {
                         <h4>Notice</h4>
                     </div>
                     <div className='notice'>
-                        You must have a minimum order amount of $5.00 to place your order. Your current order total is ${totalPrice}
+                        You must have a minimum order amount of $5.00 to place your order. Your current order total is ${totalPrice || 0}
                     </div>
                     <div className='text-center mt-4'>
                         <button onClick={() => setIsModalOpen(false)} className='btn back-btn'>
@@ -182,7 +182,7 @@ const Cart = () => {
                     </div>
                     <div className="cart-disclaimer">
                         <img src={caution} alt="Notice" width="28px" height="auto" />
-                        You must have a minimum order amount of $5.00 to place your order. Your current order total is ${totalPrice}
+                        You must have a minimum order amount of $5.00 to place your order. Your current order total is ${totalPrice || 0}
                     </div>
                     <div className='d-flex justify-content-between'>
                         <Link to="/">Continue Shopping</Link>
@@ -194,8 +194,8 @@ const Cart = () => {
                             <h4>Grand Total</h4>
                         </div>
                         <div>
-                            <h5>${totalPrice}</h5>
-                            <h4>${totalPrice}</h4>
+                            <h5>${totalPrice || 0} </h5>
+                            <h4>${totalPrice || 0}</h4>
                         </div>
                         <div>
                             <button onClick={handleCheckout} className='btn proceed-btn'>

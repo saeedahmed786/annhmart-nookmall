@@ -1,8 +1,8 @@
 import React from 'react'
 import 'antd/dist/antd.css';
-import { Route, Switch, withRouter } from 'react-router-dom'
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-import { Product } from './Pages/Product/Product';
+import { Route, Switch, withRouter } from 'react-router-dom'
 
 import { Orders } from './Pages/Profile/Order&Returns';
 import { Profile } from './Pages/Profile/Profile';
@@ -67,7 +67,6 @@ const App = () => {
 
             <Route exact path='/login' component={Login} />
             <Route exact path='/signup' component={Signup} />
-            <Route exact path='/product/:id' component={Product} />
             <Route exact path='/cart' component={Cart} />
             <Route exact path='/checkout' component={Checkout} />
             <Route exact path='/faq' component={Faq} />

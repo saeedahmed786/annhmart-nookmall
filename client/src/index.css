@@ -715,3 +715,13 @@ button:focus {
 .adminLayout table .btn {
     color: black !important;
 }
+
+.product-page .slider-wrapper .slide img {
+    width: 100%;
+    height: 660px;
+}
+
+.product-page .thumb img {
+    width: 100%;
+    height: 43px;
+}
