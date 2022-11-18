@@ -161,16 +161,16 @@ exports.updateUserByAdmin = async (req, res) => {
     }
 }
 
-exports.updateUsername = async (req, res) => {
+exports.updateEmail = async (req, res) => {
     const findUser = await User.findOne({ _id: req.user._id });
     if (findUser) {
-        findUser.username = req.body.username;
+        findUser.email = req.body.email;
 
         const saveUser = await findUser.save();
         if (saveUser) {
-            res.status(200).json({ successMessage: 'username Updated Successfully' })
+            res.status(200).json({ successMessage: 'Email Updated Successfully' })
         } else (
-            res.status(400).json({ errorMessage: 'username could not be Updated.' })
+            res.status(400).json({ errorMessage: 'Email could not be Updated.' })
         )
     } else {
         res.status(404).json({ errorMessage: 'User not found.' })

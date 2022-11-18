@@ -11,8 +11,8 @@ const Header = () => {
                 <div className="banner-overlay">
                     <div className="text-area">
                         <div className="text-area-container">
-                            <h5 className='first'>Fastest ACNH Delivery Service</h5>
-                            <h5 className='fs-1 my-2'>
+                            <h5 className='first fs-6 fs-sm-4'>Fastest ACNH Delivery Service</h5>
+                            <h5 className='fs-3 fs-sm-1 my-2'>
                                 All Orders Delivered <br /> Within 10 Minutes
                             </h5>
                             <div className='free-gift'>🎁 FREE GIFT WITH EVERY PURCHASE 🎁</div>

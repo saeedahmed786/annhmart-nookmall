@@ -168,20 +168,23 @@ header .banner {
 }
 
 @media (max-width: 600px) {
-    header .banner-container {
-        display: block;
+    header .banner-container .text-area {
+        padding: .9rem .7em .9em .7em !important;
+        border-radius: 10px;
     }
 
     header .banner-container .banner-overlay {
-        width: 100% !important;
-    }
-
-    header .banner-container .text-area {
-        border-radius: 0px;
+        width: 80% !important;
     }
 
     header .shop-button-container {
-        margin-bottom: 10px !important;
-        margin-top: 15px !important;
+        margin-bottom: 6px !important;
+        margin-top: 10px !important;
+    }
+
+    header .shop-button-container .shop-button,
+    header .shop-button-container .two-button {
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
 }

@@ -43,6 +43,11 @@ html a {
     color: #FFFFFF !important;
 }
 
+ul,
+ol {
+    padding-left: 0px !important;
+}
+
 html a:hover {
     text-decoration: none;
     color: black;

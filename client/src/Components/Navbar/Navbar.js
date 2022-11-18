@@ -110,7 +110,7 @@ export const Navbar = () => {
           </Link>
         </div>
         <div className='right'>
-          <div className='input-container d-none d-md-block' onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)}>
+          <div className='input-container' onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)}>
             <div>
               <button className='btn'>
                 <i className="fas fa-search main-search-icon"></i>

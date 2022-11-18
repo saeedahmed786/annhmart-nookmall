@@ -37,7 +37,7 @@
 .homepage main .steps {
     text-align: left;
     /* display: inline-block; */
-    margin-top: 2em;
+    /* margin-top: 2em; */
     margin-left: 2em;
     margin-right: 2em;
     padding: 2em;
@@ -155,7 +155,7 @@
     text-align: center;
     font-weight: 800 !important;
     color: #635341 !important;
-    margin-bottom: 23px !important;
+    margin: 23px 0px !important;
     font-family: "Zilla Slab";
 }
 
@@ -266,18 +266,25 @@
 }
 
 @media (max-width: 600px) {
-    .homepage main {
-        padding-top: 32px;
-    }
-
     .homepage main .product-section .col-md-4 {
         display: flex;
         justify-content: center;
     }
 
+    .homepage main .product-section .row>* {
+        padding-left: 0px !important;
+    }
+
     .homepage main .product-section .col-md-4 .productCard {
         width: 100%;
-        min-width: 300px;
-        max-width: max-content !important;
+    }
+
+    .homepage .productCard .cart-icon {
+        width: 32px !important;
+        height: 32px !important;
+    }
+
+    .desc-modal-2 {
+        width: 100% !important;
     }
 }

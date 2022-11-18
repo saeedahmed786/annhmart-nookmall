@@ -98,12 +98,12 @@ export const Home = () => {
                             </div>
                         </div>
                         <div className='steps product-section'>
-                            <div className='row g-3 mt-5'>
+                            <div className='row gx-3 gy-2 g-sm-3 mt-0'>
                                 <h2 className="tt-title text-center">Popular Items</h2>
                                 {
                                     products && products.length > 0 ? products.slice(0, 4).map((product, index) => {
                                         return (
-                                            <div className='col-sm-6 col-md-4 col-lg-3'>
+                                            <div className='col-6 col-sm-6 col-md-4 col-lg-3'>
                                                 <ProductCard product={product} />
                                             </div>
                                         )
@@ -115,7 +115,7 @@ export const Home = () => {
                                 }
                             </div>
                         </div>
-                        <div className="steps section3">
+                        <div className="steps section3 my-5">
                             <div class="wave-rule"></div>
                             <div className='title-container'>
                                 <div>

@@ -322,7 +322,8 @@ const Checkout = () => {
                         </div>
                     </div>
                     <div className="form-payment-container my-3">
-                        <h3 className='sub-title my-3'>Payment</h3>
+                        <h3 className='sub-title mt-3'>Payment</h3>
+                        <p>All transactions are secure and encrypted</p>
                         {
                             <div className="payment-information p-4">
                                 <div className="payment-container">

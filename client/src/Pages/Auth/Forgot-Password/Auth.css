@@ -2,62 +2,99 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 60vh;
 }
 
 .forgot>div {
-    width: 23% !important;
+    width: 33% !important;
+    background-image: url("https://www.animal-crossing.com/new-horizons/assets/img/global/patterns/pattern-stripes.jpg") !important;
+    background-size: 20px 20px;
+    padding: 23px !important;
+    border-radius: 10px;
+}
+
+.forgot>div .inner {
+    /* background-image: url("https://www.animal-crossing.com/new-horizons/assets/img/global/patterns/pattern-trees-2x.jpg");
+    background-size: 150px 100px; */
+    background-color: #f8f8f0 !important;
+    background-image: url("https://www.animal-crossing.com/new-horizons/assets/img/global/patterns/pattern-dots.png");
+    border-radius: 23px;
+    height: auto;
+    border-radius: 10px;
+    text-align: left;
+    padding: 1.5em;
+    max-width: 100% !important;
+    box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.4);
 }
 
 .forgot h2 {
-    font-size: 23px !important;
-    font-weight: 400;
-}
-
-.forgot .bubble-container {
-    padding: 10px !important;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-    margin-right: 0px !important;
-    margin-left: 0px !important;
-    left: 50%;
-    height: auto;
-    border-radius: 0.6em !important;
-    border-width: 0.2em;
-    border-color: #51ccee;
-    border-style: solid;
-    background-color: #66AB8C !important;
+    font-weight: 800 !important;
+    /* font-size: 36px; */
+    color: #635341 !important;
+    margin-bottom: 17px !important;
+    font-family: "Zilla Slab" !important;
 }
 
 .forgot h3 {
-    margin-top: 15px;
-    font-size: 14px !important;
-    margin-bottom: 4px !important;
+    color: black !important;
+    text-align: center !important;
+    width: 100%;
+}
+
+.forgot p {
+    color: black !important;
+    text-align: center;
+    font-weight: 500 !important;
+    font-size: 17px;
+    color: rgba(17, 17, 17, .4) !important;
+}
+
+.forgot form {
+    margin-top: 1.5em;
+}
+
+.forgot label {
+    font-size: 17px;
+    color: #635341;
+    display: block !important;
+}
+
+.forgot input,
+.forgot .input-group-text {
+    height: 47px !important;
+    border-radius: 0px !important;
+    border: 1px solid rgba(212, 212, 212, .8) !important;
+    background-color: white !important;
 }
 
 .forgot input {
-    -webkit-appearance: none;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -ms-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    outline: none;
-    border: 1px solid #fff;
-    border-radius: 0.5em !important;
-    width: 100%;
-    padding: 4px;
+    border-left: none !important;
+    border-top-right-radius: 6px !important;
+    border-bottom-right-radius: 6px !important;
+    font-size: 17px !important;
+    opacity: 1;
 }
 
-.forgot button {
+.forgot i {
+    opacity: .4;
+}
+
+.forgot .input-group-text {
+    border-right: none !important;
+    border-top-left-radius: 6px !important;
+    border-bottom-left-radius: 6px !important;
+}
+
+.forgot .btn {
     -webkit-appearance: none;
     width: 100%;
-    background-color: #51ccee;
+    background-color: #635341 !important;
     border-radius: 0.5em;
-    font-size: .9em;
+    font-size: 1em;
     color: #fff;
-    border: 0;
-    padding-top: 0.6em;
-    padding-bottom: 0.6em;
-    margin-top: 1.8em;
+    border: 0 !important;
+    padding: 0.6em;
+    margin-top: 1.5em;
 }
 
 .terms-privacy {
@@ -82,7 +119,16 @@
     color: #51ccee;
 }
 
-.forgot .forgot-noaccount .bubble-container {
-    width: 100%;
-    text-align: center;
+
+
+@media (max-width: 1100px) {
+    .forgot>div {
+        width: 60% !important;
+    }
+}
+
+@media (max-width: 530px) {
+    .forgot>div {
+        width: 86% !important;
+    }
 }

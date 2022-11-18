@@ -209,7 +209,13 @@ nav .currency-selector select {
 
 @media (max-width: 700px) {
     nav {
-        padding: 0px 4px !important;
+        padding: 7px 4px !important;
+        gap: 10px;
+    }
+
+    nav .right {
+        gap: 2px !important;
+        align-items: center;
     }
 
     nav .logo-container {
@@ -221,11 +227,61 @@ nav .currency-selector select {
         width: 100% !important;
     }
 
+    nav .icons-container {
+        width: 36%;
+        display: flex;
+        gap: 4px;
+        align-items: center;
+        margin-right: 0px;
+    }
+
+    nav .icons-container .cart-area {
+        margin-right: 80px;
+        margin-top: 4px;
+    }
+
+    nav .icons-container .cart-area .carted-count {
+        width: 14px;
+        height: 14px;
+        right: -10px;
+        font-size: 8px;
+    }
+
     nav .icons-container img {
-        width: 36px;
+        width: 23px;
     }
 
     nav .cart-area i {
-        font-size: 36px !important;
+        font-size: 21px !important;
+    }
+
+    nav .right .currency-selector select {
+        position: absolute;
+        top: -4px !important;
+        right: -8px;
+        width: 30px;
+        height: 40px !important;
+    }
+
+    nav .input-container button {
+        width: 32px;
+        height: 32px;
+        padding-top: 5px;
+    }
+
+    nav .input-container input,
+    nav .input-container input:focus {
+        width: 100% !important;
+        min-width: auto !important;
+        height: 32px;
+    }
+
+    .nav-categories {
+        gap: 0px !important;
+    }
+
+    .nav-categories .cat,
+    .nav-categories .cat.btn:focus {
+        font-size: 12px !important;
     }
 }

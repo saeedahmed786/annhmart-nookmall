@@ -109,11 +109,11 @@ export const AllProducts = (props) => {
                         :
                         <div className='row'>
                             <div className='col-md-12'>
-                                <div className='row mr-1'>
+                                <div className='row gx-3 gy-2 g-sm-3 mt-0'>
                                     {
                                         products && products.length > 0 ? products.map((product, index) => {
                                             return (
-                                                <div className='col-12 col-md-4 col-lg-3'>
+                                                <div className='col-6 col-md-4 col-lg-3'>
                                                     <ProductCard product={product} />
                                                 </div>
                                             )
@@ -137,7 +137,7 @@ export const AllProducts = (props) => {
                             </div>
                         </div>
                 }
-                <div className="results-info mt-4" id="results-info">{products && products.length} of {count} results for all&nbsp;{location.search && <span> in <b className="search-result-main">{catName}</b></span>}</div>
+                <div className="results-info m-4 mx-3 mx-sm-0" id="results-info">{products && products.length} of {count} results for all&nbsp;{location.search && <span> in <b className="search-result-main">{catName}</b></span>}</div>
             </div>
         </div>
     )

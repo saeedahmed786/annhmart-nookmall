@@ -2,7 +2,6 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { isAuthenticated, logout } from '../../Components/Auth/auth';
 import { Error, Success } from '../../Components/Messages/messages';
-import CreateKey from '../../assets/crateKey.png';
 import './Profile.css'
 import { Link } from 'react-router-dom';
 
@@ -10,13 +9,14 @@ export const Profile = () => {
     const [user, setUser] = useState({});
     const [loading, setLoading] = useState(false);
     const [dudoCode, setDudoCode] = useState("");
-    const [username, setUsername] = useState("");
+    const [email, setEmail] = useState("");
 
     const getUser = async () => {
         setLoading(true);
         await axios.get(`/api/users/get/${isAuthenticated()._id}`).then(res => {
             if (res.status === 200) {
                 setUser(res.data);
+                setEmail(res.data?.email)
                 setLoading(false);
             } else {
                 Error(res.data.errorMessage);
@@ -50,11 +50,10 @@ export const Profile = () => {
         })
     };
 
-    const updateUsername = async (e) => {
+    const updateEmail = async (e) => {
         e.preventDefault();
-        window.scrollTo(0, 0);
         setLoading(true);
-        await axios.put('/api/users/update/username', { username }, {
+        await axios.put('/api/users/update/email', { email }, {
             headers: {
                 'authorization': 'Bearer ' + localStorage.getItem('token')
             }
@@ -107,6 +106,17 @@ export const Profile = () => {
                                             </div>
                                         </>
                             }
+                        </div>
+                        <div className="profile-element">
+                            <div>
+                                <h3>Email</h3>
+                            </div>
+                            <div className="sponsor fs-5 fw-bold emailForm">
+                                <form className=' d-flex gap-0 align-items-center' onSubmit={updateEmail}>
+                                    <input value={email} onChange={(e) => setEmail(e.target.value)} />
+                                    <button className='btn' type='submit'>Update</button>
+                                </form>
+                            </div>
                         </div>
                         <div className="profile-element">
                             <div>

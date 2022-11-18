@@ -113,7 +113,7 @@ export const ProductCard = ({ product }) => {
             </div>
           </Modal>
           <div className="desc mt-0 mb-2">
-            <div className="fs-4">
+            <div className="fs-6 fs-sm-5 price">
               ${product.offer && product.offer !== "0" ? (parseInt(product.price) - parseInt(product.price) * parseInt(product.offer) / 100).toFixed(2) : product.price}
             </div>
             <div>

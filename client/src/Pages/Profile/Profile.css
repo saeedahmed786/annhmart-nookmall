@@ -10,6 +10,7 @@
     background-size: 20px 20px;
     padding: 23px !important;
     border-radius: 10px;
+    width: 80% !important;
 }
 
 .profile>div .inner {
@@ -24,10 +25,6 @@
     padding: 1.5em;
     max-width: 100% !important;
     box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.4);
-}
-
-.profile>div {
-    width: 80% !important;
 }
 
 .profile .title,
@@ -69,7 +66,7 @@
     font-size: 1em;
     color: #fff;
     border: 0 !important;
-    padding: 0.6em;
+    padding: 0.32em;
     white-space: nowrap;
 }
 
@@ -91,8 +88,41 @@
     margin-right: 3em
 }
 
+.profile .emailForm input {
+    padding: 0.32em;
+    border-radius: 0.5em;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 0;
+    width: 100%;
+}
+
 @media (max-width: 1100px) {
     .profile>div {
         width: 96% !important;
+    }
+}
+
+@media (max-width: 530px) {
+    .profile>div .inner {
+        padding: 10px;
+    }
+
+    .profile .emailForm {
+        width: 60% !important;
+    }
+
+    .profile .title,
+    .profile h3 {
+        font-size: 17px;
+    }
+
+    .profile button,
+    .profile .password-reset-button {
+        font-size: 12px !important;
+    }
+
+    .profile .sponsor {
+        font-size: 12px !important;
     }
 }

@@ -7,7 +7,7 @@
     box-sizing: border-box;
     display: flex;
     justify-content: end;
-    margin-bottom: 23px;
+    margin-bottom: 15px;
 }
 
 .results-sorter select {
@@ -95,7 +95,7 @@
 }
 
 .all-products .col-md-4 {
-    margin-bottom: 21px;
+    /* margin-bottom: 21px; */
 }
 
 .all-products .buttons-container {
@@ -129,17 +129,46 @@
 }
 
 @media (max-width: 600px) {
-    .all-products .col-md-4 {
-        display: flex;
-        justify-content: center;
+    .all-products {
+        padding: 13px 0px 0px 0px;
     }
 
-    .all-products .col-md-4 .productCard {
-        min-width: 300px;
-        max-width: max-content !important;
+    .all-products .results-sorter {
+        padding-right: 12px;
     }
 
-    .all-products .results-info {
+
+    select .all-products .results-info {
         text-align: center;
+    }
+
+    .results-sorter select {
+        height: 2rem;
+        padding: 0px 10px;
+        font-size: 15px;
+        width: 100px;
+    }
+
+    .all-products .productCard .cart-icon {
+        width: 32px !important;
+        height: 32px !important;
+    }
+
+    .desc-modal-2 {
+        width: 100% !important;
+    }
+
+    .all-products .row {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+
+    .all-products .row>* {
+        padding-left: 0px !important;
+        padding-right: 4px !important;
+    }
+
+    .all-products .row>* {
+        padding-left: 4px !important;
     }
 }

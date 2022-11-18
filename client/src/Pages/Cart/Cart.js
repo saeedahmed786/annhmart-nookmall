@@ -125,7 +125,7 @@ const Cart = () => {
             </Modal>
             <div>
                 <div className='inner'>
-                    <h1 className='title mb-0'>SHOPPING CART</h1>
+                    <h1 className='title mb-0 mt-4 mt-sm-0'>SHOPPING CART</h1>
                     <div className='table-responsive'>
                         <table className="user-cart">
                             <tbody>
@@ -180,11 +180,11 @@ const Cart = () => {
                             </tbody>
                         </table>
                     </div>
-                    <div className="cart-disclaimer">
+                    <div className="cart-disclaimer mt-3">
                         <img src={caution} alt="Notice" width="28px" height="auto" />
                         You must have a minimum order amount of $5.00 to place your order. Your current order total is ${totalPrice || 0}
                     </div>
-                    <div className='d-flex justify-content-between'>
+                    <div className='d-flex justify-content-between my-2 my-sm-3'>
                         <Link to="/">Continue Shopping</Link>
                         <Link to="/">Clear Shopping Cart</Link>
                     </div>
@@ -198,13 +198,13 @@ const Cart = () => {
                             <h4>${totalPrice || 0}</h4>
                         </div>
                         <div>
-                            <button onClick={handleCheckout} className='btn proceed-btn'>
+                            <button onClick={handleCheckout} className='btn proceed-btn mt-3 my-sm-0'>
                                 <span>Proceed to Checkout</span>
                             </button>
                         </div>
                     </div>
-                    <div className="payment-information my-3">
-                        <h3 className='sub-title'>ORDER PROCESS</h3>
+                    <div className="payment-information">
+                        <h3 className='sub-title my-3'>ORDER PROCESS</h3>
                         <div className="order-process p-4">
                             <h5 className='mt-0'>
                                 Message us your order number and Dodo Code™ by clicking the chat icon on the lower right corner of the webpage.
