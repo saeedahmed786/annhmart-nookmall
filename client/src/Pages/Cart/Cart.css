@@ -313,8 +313,16 @@
         padding: 10px !important;
     }
 
+    .cart .cart-preview {
+        height: 28px;
+    }
+
+    .cart .user-cart td {
+        font-size: 12px;
+    }
+
     .cart .qty-box>div {
-        padding: 4px !important;
+        padding: 0px !important;
     }
 
     .cart .cart-disclaimer {
@@ -323,6 +331,12 @@
 
     .cart .price-container div:nth-child(3) {
         width: 100% !important;
+    }
+    .cart .price-container h4 {
+        font-size: 19px;
+    }
+    .cart .price-container h5 {
+        font-size: 17px;
     }
 
     .cart .order-process {

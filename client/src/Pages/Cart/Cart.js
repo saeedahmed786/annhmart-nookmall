@@ -125,7 +125,7 @@ const Cart = () => {
             </Modal>
             <div>
                 <div className='inner'>
-                    <h1 className='title mb-0 mt-4 mt-sm-0'>SHOPPING CART</h1>
+                    <h1 className='title mb-0 mt-2 mt-sm-0'>SHOPPING CART</h1>
                     <div className='table-responsive'>
                         <table className="user-cart">
                             <tbody>

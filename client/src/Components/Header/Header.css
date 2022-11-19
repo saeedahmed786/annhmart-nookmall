@@ -168,9 +168,22 @@ header .banner {
 }
 
 @media (max-width: 600px) {
+    header .banner-container {
+        background-size: 100vw 32vh !important;
+        height: 32vh !important;
+    }
+
     header .banner-container .text-area {
-        padding: .9rem .7em .9em .7em !important;
+        padding: .8rem !important;
+        /* padding: .9rem .7em .9em .7em !important; */
         border-radius: 10px;
+    }
+    header .banner-container .text-area h5 {
+        font-size: 17px !important;
+    }
+
+    .text-area .free-gift {
+        font-size: 10px !important;
     }
 
     header .banner-container .banner-overlay {
@@ -179,12 +192,21 @@ header .banner {
 
     header .shop-button-container {
         margin-bottom: 6px !important;
-        margin-top: 10px !important;
+        margin-top: 2px !important;
+        display: block !important;
+        margin: 0px auto !important;
+    }
+
+    header .shop-button-container a {
+       display: block;
+       margin-top: 6px;
     }
 
     header .shop-button-container .shop-button,
     header .shop-button-container .two-button {
         margin-top: 0px;
         margin-bottom: 0px;
+        padding: 4px 6px !important;
+        font-size: 12px;
     }
 }

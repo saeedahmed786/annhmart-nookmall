@@ -266,6 +266,10 @@
 }
 
 @media (max-width: 600px) {
+    .homepage main .product-section {
+        padding-left: 8px;
+    }
+
     .homepage main .product-section .col-md-4 {
         display: flex;
         justify-content: center;

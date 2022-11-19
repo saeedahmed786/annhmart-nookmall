@@ -14,6 +14,7 @@ var Carousel = require('react-responsive-carousel').Carousel;
 export const ProductCard = ({ product }) => {
   const history = useHistory();
   const [loading, setLoading] = useState(false);
+  const [currentSlide, setCurrentSlide] = useState(0);
   const [selectedImage, setSelectedImage] = useState(0);
   const dispatch = useDispatch();
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -82,10 +83,11 @@ export const ProductCard = ({ product }) => {
           <div className="title-container">
             <div className="title">{product.title}</div>
           </div>
-          <Carousel onClickThumb={(index) => setSelectedImage(index)} showThumbs
+          <Carousel selectedItem={currentSlide} onClickThumb={(index) => setSelectedImage(index)} showThumbs={product?.productPictures?.length > 1 && true}
             onClickItem={() =>
               product.description ? showModal() : () => { }
             }
+
             showStatus={false} showIndicators={false} showArrows={false}>
             {
               product.productPictures && product.productPictures.map(pic => {
@@ -98,6 +100,10 @@ export const ProductCard = ({ product }) => {
               })
             }
           </Carousel>
+          {
+            product?.productPictures?.length === 1 &&
+            <div className="empty-space"></div>
+          }
           <Modal className={"desc-modal-2"} mask destroyOnClose footer={false} visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
             <div className="desc-modal">
               <div className="text-center">

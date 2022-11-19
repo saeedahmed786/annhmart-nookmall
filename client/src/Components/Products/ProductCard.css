@@ -5,7 +5,10 @@
     text-align: center;
     color: black;
     background-color: #FFFFFF !important;
-    /* box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.5) !important; */
+}
+
+.productCard .empty-space {
+    height: 62px;
 }
 
 .productCard .top {

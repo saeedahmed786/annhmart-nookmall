@@ -257,10 +257,10 @@ nav .currency-selector select {
 
     nav .right .currency-selector select {
         position: absolute;
-        top: -4px !important;
+        top: -8px !important;
         right: -8px;
         width: 30px;
-        height: 40px !important;
+        height: 47px !important;
     }
 
     nav .input-container button {

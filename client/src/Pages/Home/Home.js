@@ -124,14 +124,14 @@ export const Home = () => {
                             </div>
                             <div className='information-con'>
                                 <h1 className="main-information">Buy Bells Animal Crossing New Horizons</h1>
-                                <p className='mt-0'>One of the hardest parts of New Horizons is finding a quick and cheap way to get Bells in Animal Crossing. Nookmall has you covered so you can pay off your debt to Tom Nook!</p>
+                                <p className='mt-0'>Collecting Bells is a big priority in Animal Crossing to pay off your debt to Tom Nook. You can quickly get Bells from the Nookmall in less than 10 minutes!</p>
                                 <h1 className="main-information">Buy Items Animal Crossing</h1>
-                                <p className='mt-0'>Whether to find Villagers or hunt for rare insects and fish, Nook Miles Tickets are a very critical part of the game. We offer a variety of different packages all delivered straight to your island!</p>
-                                <h1 className="main-information">Buy DIYS New Horizons</h1>
-                                <p className='mt-0'>DIY recipes offer access to some of the rarest and most sought after items in Animal Crossing. Through Nookmall you can order individual DIY recipes or DIY packages, all delivered in minutes.</p>
+                                <p className='mt-0'>The Nookmall offers all Animal Crossing New Horizons items. Rare insects and fish, all Villagers, and seasonal items.</p>
+                                <h1 className="main-information">Buy ACNH DIY Recipes</h1>
+                                <p className='mt-0'>Animal Crossing DIY Recipes is a popular item that can be used to craft a bunch of items. We offer the rarest DIY recipes, DIY Sets, and DIY Islands!</p>
                             </div>
                         </div>
-                        <div className="steps section5 w-100">
+                        <div className="steps section5 w-100 d-none d-sm-block">
                             <div className="container services-listing">
                                 <div className="row g-4">
                                     <div className="col-md-6 col-lg-4">
