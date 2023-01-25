@@ -2,7 +2,7 @@ import { Input, Tabs } from 'antd';
 import axios from 'axios'
 import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom';
-import CSVReaderComp from '../../../Components/Admin/CSVReader';
+// import CSVReaderComp from '../../../Components/Admin/CSVReader';
 import { isAuthenticated } from '../../../Components/Auth/auth';
 import { AdminLayout } from '../../../Components/Layouts/AdminLayout';
 import { Error } from '../../../Components/Messages/messages';
@@ -55,7 +55,7 @@ export const AdminProducts = () => {
     return (
         <AdminLayout sidebar>
             <div className='d-flex justify-content-between mt-4'>
-                <CSVReaderComp />
+                {/* <CSVReaderComp /> */}
                 <div>
                     <Link to='/admin/create-products' className='btn px-4' style={{ background: '#364c64', color: 'white', borderRadius: '23px' }}>Create Product</Link>
                 </div>
