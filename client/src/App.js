@@ -43,9 +43,9 @@ import { DiscountCodes } from './Pages/Admin/DiscountCodes/DiscountCodes';
 
 const App = () => {
 
-  let get = document.getElementsByClassName('paypal-button-tagline')[0];
-  console.log(get)
-  if (get) { get.style.visibility = 'hidden' }
+  // let get = document.getElementsByClassName('paypal-button-tagline')[0];
+  // console.log(get)
+  // if (get) { get.style.visibility = 'hidden' }
 
 
   return (

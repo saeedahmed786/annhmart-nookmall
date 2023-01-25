@@ -138,7 +138,7 @@ exports.updateCategory = async (req, res) => {
     const editCategory = await Category.findById({ _id: req.params.id });
     if (editCategory) {
         if (req.file) {
-            await cloudinaryCon.uploader.destroy(editCategory?.file.id);
+            await cloudinaryCon?.uploader?.destroy(editCategory?.file.id);
 
             const uploader = async (path) => await cloudinary.uploads(path, 'Nookmall/Categories');
             const { path } = req.file;

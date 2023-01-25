@@ -73,7 +73,6 @@ export const GetCategories = () => {
             <tbody>
               {
                 categories.length > 0 && categories.map((cat, index) => {
-                  console.log(cat);
                   return (
                     <>
                       <tr key={cat._id} style={{ borderBottom: '1px solid black' }}>
