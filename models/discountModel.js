@@ -8,6 +8,14 @@ const discountSchema = new mongoose.Schema({
     discount: {
         type: String,
         required: true
+    },
+    user: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "User"
+    },
+    type: {
+        type: String,
+        default: "percentage"
     }
 
 }, { timestamps: true }

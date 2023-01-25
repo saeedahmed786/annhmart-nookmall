@@ -176,6 +176,21 @@ exports.updateEmail = async (req, res) => {
         res.status(404).json({ errorMessage: 'User not found.' })
     }
 }
+exports.updateUserPoints = async (req, res) => {
+    const findUser = await User.findOne({ _id: req.user._id });
+    if (findUser) {
+        findUser.points = parseInt(findUser.points) - parseInt(req.body.points);
+
+        const saveUser = await findUser.save();
+        if (saveUser) {
+            res.status(200).json({ successMessage: 'Points Updated Successfully' })
+        } else (
+            res.status(400).json({ errorMessage: 'Points could not be Updated.' })
+        )
+    } else {
+        res.status(404).json({ errorMessage: 'User not found.' })
+    }
+}
 
 
 exports.changePassword = async (req, res) => {

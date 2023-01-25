@@ -186,8 +186,13 @@ const Checkout = () => {
             }
         }).then(res => {
             if (res.status === 200) {
-                setTotalPrice(parseInt(totalPrice) - (parseInt(totalPrice) * res.data.discount / 100).toFixed(2))
-                setDiscount(parseInt(totalPrice) * (res.data.discount / 100).toFixed(2));
+                if (res.data.type === "percentage") {
+                    setTotalPrice(parseInt(totalPrice) - (parseInt(totalPrice) * res.data.discount / 100).toFixed(2))
+                    setDiscount(parseInt(totalPrice) * (res.data.discount / 100).toFixed(2));
+                } else {
+                    setTotalPrice(parseInt(totalPrice) - (parseInt(res.data.discount)).toFixed(2))
+                    setDiscount(res.data.discount);
+                }
                 Success("Discount Applied");
             } else {
                 setDiscount("0")

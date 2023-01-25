@@ -4,12 +4,23 @@ import { isAuthenticated, logout } from '../../Components/Auth/auth';
 import { Error, Success } from '../../Components/Messages/messages';
 import './Profile.css'
 import { Link } from 'react-router-dom';
+import { Modal } from 'antd';
+import { DollarOutlined, ShopOutlined } from "@ant-design/icons"
 
 export const Profile = () => {
     const [user, setUser] = useState({});
     const [loading, setLoading] = useState(false);
-    const [dudoCode, setDudoCode] = useState("");
     const [email, setEmail] = useState("");
+    const [isModalVisible, setIsModalVisible] = useState(false);
+    const [userDiscountCode, setUserDiscountCode] = useState({});
+
+    const showModal = () => {
+        setIsModalVisible(true);
+    };
+
+    const handleCancel = () => {
+        setIsModalVisible(false);
+    };
 
     const getUser = async () => {
         setLoading(true);
@@ -26,23 +37,21 @@ export const Profile = () => {
 
     useEffect(() => {
         getUser();
+        getUserDiscountCode()
         return () => {
 
         }
     }, []);
 
-    const addDudoCode = async (e) => {
-        e.preventDefault();
-        window.scrollTo(0, 0);
-        setLoading(true);
-        await axios.put('/api/users/update/dudocode', { dudoCode }, {
+    const getUserDiscountCode = async () => {
+        await axios.get('/api/discounts/user/code', {
             headers: {
                 'authorization': 'Bearer ' + localStorage.getItem('token')
             }
         }).then(async (res) => {
             setLoading(false);
             if (res.status === 200) {
-                Success(res.data.successMessage);
+                setUserDiscountCode(res.data);
             }
             else {
                 Error(res.data.errorMessage);
@@ -66,6 +75,54 @@ export const Profile = () => {
                 Error(res.data.errorMessage);
             }
         })
+    };
+
+    const updatePoints = async (points) => {
+        await axios.put(`/api/users/update/points/${isAuthenticated()._id}`, { points }, {
+            headers: {
+                'authorization': 'Bearer ' + localStorage.getItem('token')
+            }
+        }).then(async (res) => {
+            if (res.status === 200) {
+                Success(res.data.successMessage);
+                document.location.reload();
+            }
+            else {
+                Error(res.data.errorMessage);
+            }
+        })
+    };
+
+    const submitHandler = (dis, type, points) => {
+        console.log(dis)
+        setLoading(true);
+        axios.post(`/api/discounts/user`, { discountCode: generateCode(), discount: dis, type }, {
+            headers: {
+                authorization: "Bearer " + localStorage.getItem('token'),
+            }
+        }).then((res) => {
+            if (res.status === 200) {
+                setLoading(false);
+                Success(res.data.successMessage);
+                setUserDiscountCode(res.data.code);
+                setIsModalVisible(false);
+                updatePoints(points);
+            } else {
+                Error(res.data.errorMessage)
+            }
+        });
+        console.log(generateCode())
+    };
+
+    const generateCode = () => {
+        const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+        let code = '';
+
+        for (let i = 0; i < 8; i++) {
+            code += characters[Math.floor(Math.random() * characters.length)];
+        }
+
+        return code;
     };
 
     return (
@@ -133,7 +190,42 @@ export const Profile = () => {
                                 <h3>Ways to redeem</h3>
                             </div>
                             <div className="crate-key-count">
-                                <p className="key-count">0 x </p>
+                                {
+                                    userDiscountCode && userDiscountCode.discountCode ?
+                                        <p className="key-count">
+                                            {userDiscountCode.discountCode}
+                                        </p>
+                                        :
+                                        <p className="key-count">
+                                            <button onClick={showModal}>Redeem</button>
+                                        </p>
+                                }
+                                <Modal width={280} title="Redeem Coupans" footer={false} visible={isModalVisible} onCancel={handleCancel}>
+                                    <div className='text-dark'>
+                                        <h4 className='text-dark'>Ways to redeem</h4>
+                                        <button onClick={() => submitHandler("10", "percentage", "200")} className='bg-white border-0 text-left d-flex align-items-center gap-4 mt-3'>
+                                            <ShopOutlined className="fs-3" />
+                                            <div>
+                                                <h6 className='text-dark'>10% Off Coupan</h6>
+                                                <h6 className='text-dark'>200 points</h6>
+                                            </div>
+                                        </button>
+                                        <button onClick={() => submitHandler("30", "percentage", "500")} className='bg-white border-0 text-left d-flex align-items-center gap-4 mt-3'>
+                                            <ShopOutlined className="fs-3" />
+                                            <div>
+                                                <h6 className='text-dark'>30% Off Coupan</h6>
+                                                <h6 className='text-dark'>500 points</h6>
+                                            </div>
+                                        </button>
+                                        <button onClick={() => submitHandler("1", "amount", "100")} className='bg-white border-0 text-left d-flex align-items-center gap-4 mt-3'>
+                                            <DollarOutlined className="fs-3" />
+                                            <div>
+                                                <h6 className='text-dark'>Order discount</h6>
+                                                <h6 className='text-dark'>100 points = $1</h6>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </Modal>
                             </div>
                         </div>
                         {/* <hr className="seperator" /> */}
